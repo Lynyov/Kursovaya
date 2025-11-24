@@ -17,8 +17,6 @@ bool compareMaps(const std::map<std::string, std::string>& map1, const std::map<
     return true;
 }
 
-// Тесты для класса Decoder
-
 // Тестирование конструктора и методов получения значений
 TEST(DecoderConstructorAndGetters) {
     Decoder decoder;
@@ -80,7 +78,6 @@ TEST(DecoderInvalidPort) {
     CHECK_THROW(decoder.parse(argc, const_cast<char**>(argv)), ArgsDecodeException);
 }
 
-// Тесты для функций getSalt и getHash
 
 // Тест функции getSalt()
 TEST(GetSalt) {
@@ -117,7 +114,6 @@ TEST(SameInputSameHash) {
     CHECK_EQUAL(hash1, hash2);
 }
 
-// Тесты для класса Network
 
 // Тестирование конструктора и методов получения значений
 TEST(NetworkConstructorAndGetters) {
