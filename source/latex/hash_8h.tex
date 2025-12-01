@@ -1,0 +1,84 @@
+\hypertarget{hash_8h}{}\doxysection{Файл Desktop/sasha/hash.h}
+\label{hash_8h}\index{Desktop/sasha/hash.h@{Desktop/sasha/hash.h}}
+
+
+Определения вспомогательных функций для криптографических операций.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cryptopp/sha.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/hex.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/osrng.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/filters.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Граф включаемых заголовочных файлов для hash.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hash_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hash_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{hash_8h_ac680d66101b7c1753cf1de7c91bba96f}{get\+Salt}} ()
+\begin{DoxyCompactList}\small\item\em Функция для генерации соли. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{hash_8h_abaa19eb5b25e1c37fe6f23fc2a42f3ca}{get\+Hash}} (const string \&data)
+\begin{DoxyCompactList}\small\item\em Функция для вычисления хеша. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Определения вспомогательных функций для криптографических операций. 
+
+Этот файл содержит определения функций для генерации соли и вычисления хеша. \begin{DoxyDate}{Дата}
+01.\+12.\+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Автор}
+Лынев А. С. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{hash_8h_abaa19eb5b25e1c37fe6f23fc2a42f3ca}\label{hash_8h_abaa19eb5b25e1c37fe6f23fc2a42f3ca}} 
+\index{hash.h@{hash.h}!getHash@{getHash}}
+\index{getHash@{getHash}!hash.h@{hash.h}}
+\doxysubsubsection{\texorpdfstring{getHash()}{getHash()}}
+{\footnotesize\ttfamily string get\+Hash (\begin{DoxyParamCaption}\item[{const string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Функция для вычисления хеша. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Данные для хеширования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8h_ac680d66101b7c1753cf1de7c91bba96f}\label{hash_8h_ac680d66101b7c1753cf1de7c91bba96f}} 
+\index{hash.h@{hash.h}!getSalt@{getSalt}}
+\index{getSalt@{getSalt}!hash.h@{hash.h}}
+\doxysubsubsection{\texorpdfstring{getSalt()}{getSalt()}}
+{\footnotesize\ttfamily string get\+Salt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция для генерации соли. 
+
+\begin{DoxyReturn}{Возвращает}
+Соль в виде строки. 
+\end{DoxyReturn}

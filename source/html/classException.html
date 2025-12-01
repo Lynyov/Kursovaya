@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Разработка сервера: Класс Exception</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Разработка сервера
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classException-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Exception</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Базовый класс для исключений.  
+ <a href="classException.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="exceptions_8h_source.html">exceptions.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Exception:</div>
+<div class="dyncontent">
+<div class="center"><img src="classException__inherit__graph.png" border="0" usemap="#aException_inherit__map" alt="Inheritance graph"/></div>
+<map name="aException_inherit__map" id="aException_inherit__map">
+<area shape="rect" title="Базовый класс для исключений." alt="" coords="373,80,460,107"/>
+<area shape="rect" href="classArgsDecodeException.html" title="Класс для исключений при декодировании аргументов." alt="" coords="5,155,169,181"/>
+<area shape="rect" href="classAuthException.html" title="Класс для исключений аутентификации." alt="" coords="193,155,309,181"/>
+<area shape="rect" href="classDataDecodeException.html" title="Класс для исключений при декодировании данных." alt="" coords="333,155,500,181"/>
+<area shape="rect" href="classIOException.html" title="Класс для исключений ввода&#45;вывода." alt="" coords="524,155,624,181"/>
+<area shape="rect" href="classNetworkException.html" title="Класс для сетевых исключений." alt="" coords="647,155,789,181"/>
+<area shape="rect" title=" " alt="" coords="359,5,474,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Exception:</div>
+<div class="dyncontent">
+<div class="center"><img src="classException__coll__graph.png" border="0" usemap="#aException_coll__map" alt="Collaboration graph"/></div>
+<map name="aException_coll__map" id="aException_coll__map">
+<area shape="rect" title="Базовый класс для исключений." alt="" coords="19,80,106,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,120,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6119bf0dba9057fde1f5bf16fe30bc31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a6119bf0dba9057fde1f5bf16fe30bc31">Exception</a> (const string &amp;<a class="el" href="classException.html#a11a607edc10130e054cdce487993437d">name</a>, const string &amp;<a class="el" href="classException.html#af6bb043376cfd57addca2901019e94cb">message</a>, const string &amp;<a class="el" href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">func</a>, const string &amp;<a class="el" href="classException.html#a43197a51743087c856ce2e02efc41e2b">log_path</a>, bool <a class="el" href="classException.html#add37728d4a7240c005c9a77605716090">critical</a>)</td></tr>
+<tr class="memdesc:a6119bf0dba9057fde1f5bf16fe30bc31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="classException.html" title="Базовый класс для исключений.">Exception</a>.  <a href="classException.html#a6119bf0dba9057fde1f5bf16fe30bc31">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6119bf0dba9057fde1f5bf16fe30bc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91eace2bc486fa18d3f913a28f3921f8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a91eace2bc486fa18d3f913a28f3921f8">what</a> () const noexcept override</td></tr>
+<tr class="memdesc:a91eace2bc486fa18d3f913a28f3921f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для получения сообщения об ошибке.  <a href="classException.html#a91eace2bc486fa18d3f913a28f3921f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a91eace2bc486fa18d3f913a28f3921f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a2b88ac79e90d828270a311544777e6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a2b88ac79e90d828270a311544777e6f2">logException</a> () const</td></tr>
+<tr class="memdesc:a2b88ac79e90d828270a311544777e6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для логирования исключения.  <a href="classException.html#a2b88ac79e90d828270a311544777e6f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2b88ac79e90d828270a311544777e6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a11a607edc10130e054cdce487993437d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a11a607edc10130e054cdce487993437d">name</a></td></tr>
+<tr class="memdesc:a11a607edc10130e054cdce487993437d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя исключения.  <a href="classException.html#a11a607edc10130e054cdce487993437d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a11a607edc10130e054cdce487993437d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f55da875481f85c4ad1da7eaa7e3279"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">func</a></td></tr>
+<tr class="memdesc:a4f55da875481f85c4ad1da7eaa7e3279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя функции, в которой возникло исключение.  <a href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4f55da875481f85c4ad1da7eaa7e3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bb043376cfd57addca2901019e94cb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#af6bb043376cfd57addca2901019e94cb">message</a></td></tr>
+<tr class="memdesc:af6bb043376cfd57addca2901019e94cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение об ошибке.  <a href="classException.html#af6bb043376cfd57addca2901019e94cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:af6bb043376cfd57addca2901019e94cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43197a51743087c856ce2e02efc41e2b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#a43197a51743087c856ce2e02efc41e2b">log_path</a></td></tr>
+<tr class="memdesc:a43197a51743087c856ce2e02efc41e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу журнала.  <a href="classException.html#a43197a51743087c856ce2e02efc41e2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43197a51743087c856ce2e02efc41e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add37728d4a7240c005c9a77605716090"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classException.html#add37728d4a7240c005c9a77605716090">critical</a></td></tr>
+<tr class="memdesc:add37728d4a7240c005c9a77605716090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг критичности исключения.  <a href="classException.html#add37728d4a7240c005c9a77605716090">Подробнее...</a><br /></td></tr>
+<tr class="separator:add37728d4a7240c005c9a77605716090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Базовый класс для исключений. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a6119bf0dba9057fde1f5bf16fe30bc31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6119bf0dba9057fde1f5bf16fe30bc31">&#9670;&nbsp;</a></span>Exception()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Exception::Exception </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>log_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>critical</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="classException.html" title="Базовый класс для исключений.">Exception</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя исключения. </td></tr>
+    <tr><td class="paramname">message</td><td>Сообщение об ошибке. </td></tr>
+    <tr><td class="paramname">func</td><td>Имя функции, в которой возникло исключение. </td></tr>
+    <tr><td class="paramname">log_path</td><td>Путь к файлу журнала. </td></tr>
+    <tr><td class="paramname">critical</td><td>Флаг критичности исключения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a2b88ac79e90d828270a311544777e6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b88ac79e90d828270a311544777e6f2">&#9670;&nbsp;</a></span>logException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Exception::logException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для логирования исключения. </p>
+
+</div>
+</div>
+<a id="a91eace2bc486fa18d3f913a28f3921f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91eace2bc486fa18d3f913a28f3921f8">&#9670;&nbsp;</a></span>what()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Exception::what </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для получения сообщения об ошибке. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Сообщение об ошибке. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="add37728d4a7240c005c9a77605716090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add37728d4a7240c005c9a77605716090">&#9670;&nbsp;</a></span>critical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Exception::critical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг критичности исключения. </p>
+
+</div>
+</div>
+<a id="a4f55da875481f85c4ad1da7eaa7e3279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f55da875481f85c4ad1da7eaa7e3279">&#9670;&nbsp;</a></span>func</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Exception::func</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя функции, в которой возникло исключение. </p>
+
+</div>
+</div>
+<a id="a43197a51743087c856ce2e02efc41e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43197a51743087c856ce2e02efc41e2b">&#9670;&nbsp;</a></span>log_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Exception::log_path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к файлу журнала. </p>
+
+</div>
+</div>
+<a id="af6bb043376cfd57addca2901019e94cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bb043376cfd57addca2901019e94cb">&#9670;&nbsp;</a></span>message</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Exception::message</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сообщение об ошибке. </p>
+
+</div>
+</div>
+<a id="a11a607edc10130e054cdce487993437d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a607edc10130e054cdce487993437d">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Exception::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя исключения. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Desktop/sasha/<a class="el" href="exceptions_8h_source.html">exceptions.h</a></li>
+<li>Desktop/sasha/<a class="el" href="exceptions_8cpp.html">exceptions.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

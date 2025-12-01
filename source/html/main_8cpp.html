@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Разработка сервера: Файл Desktop/sasha/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Разработка сервера
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_149f31127b318c3ca9a0aa2e8d2663de.html">sasha</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;../../Kursovaya/source/headers/network.h&quot;</code><br />
+<code>#include &quot;../../Kursovaya/source/headers/decoder.h&quot;</code><br />
+<code>#include &quot;../../Kursovaya/source/headers/exceptions.h&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#aDesktop_2sasha_2main_8cpp" alt=""/></div>
+<map name="aDesktop_2sasha_2main_8cpp" id="aDesktop_2sasha_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="515,5,697,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,167,121"/>
+<area shape="rect" title=" " alt="" coords="191,80,352,121"/>
+<area shape="rect" title=" " alt="" coords="377,80,542,121"/>
+<area shape="rect" title=" " alt="" coords="566,87,646,114"/>
+<area shape="rect" title=" " alt="" coords="671,87,744,114"/>
+<area shape="rect" title=" " alt="" coords="769,87,819,114"/>
+<area shape="rect" title=" " alt="" coords="843,87,902,114"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aeb6e353c9485bad94a71ccf3590fad0b"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aeb6e353c9485bad94a71ccf3590fad0b">getDataBase</a> (string &amp;path)</td></tr>
+<tr class="memdesc:aeb6e353c9485bad94a71ccf3590fad0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает файл базы данных и заполняет карту парами "имя пользователя - пароль".  <a href="main_8cpp.html#aeb6e353c9485bad94a71ccf3590fad0b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeb6e353c9485bad94a71ccf3590fad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a8a827dbf87d37e6cc5199dc7630b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a872a8a827dbf87d37e6cc5199dc7630b">loop</a> (<a class="el" href="classNetwork.html">Network</a> *network)</td></tr>
+<tr class="memdesc:a872a8a827dbf87d37e6cc5199dc7630b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной цикл для обработки сетевых операций. Эта функция запускает сетевой сервис и входит в бесконечный цикл, в котором она ожидает входящих соединений, аутентифицирует пользователей и выполняет операции. Любые сетевые исключения обрабатываются и регистрируются. Если возникает неожиданное исключение, сетевой сервис останавливается.  <a href="main_8cpp.html#a872a8a827dbf87d37e6cc5199dc7630b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a872a8a827dbf87d37e6cc5199dc7630b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная точка входа в приложение.  <a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a43d413fb8bcb5db4a1118ce117e2d7d9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a43d413fb8bcb5db4a1118ce117e2d7d9">LOG_PATH</a></td></tr>
+<tr class="separator:a43d413fb8bcb5db4a1118ce117e2d7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aeb6e353c9485bad94a71ccf3590fad0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6e353c9485bad94a71ccf3590fad0b">&#9670;&nbsp;</a></span>getDataBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, string&gt; getDataBase </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Читает файл базы данных и заполняет карту парами "имя пользователя - пароль". </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Ссылка на строку, представляющую путь к файлу базы данных. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Карта, содержащая пары "имя пользователя - пароль" </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classIOException.html" title="Класс для исключений ввода-вывода.">IOException</a></td><td>Если файл не может быть открыт. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classDataDecodeException.html" title="Класс для исключений при декодировании данных.">DataDecodeException</a></td><td>Если строка в файле не соответствует ожидаемому формату или если произошла ошибка при чтении из файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a872a8a827dbf87d37e6cc5199dc7630b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872a8a827dbf87d37e6cc5199dc7630b">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNetwork.html">Network</a> *&#160;</td>
+          <td class="paramname"><em>network</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основной цикл для обработки сетевых операций. Эта функция запускает сетевой сервис и входит в бесконечный цикл, в котором она ожидает входящих соединений, аутентифицирует пользователей и выполняет операции. Любые сетевые исключения обрабатываются и регистрируются. Если возникает неожиданное исключение, сетевой сервис останавливается. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">network</td><td>Указатель на объект <a class="el" href="classNetwork.html" title="Класс для управления сетевым подключением и взаимодействием.">Network</a>, который обрабатывает сетевые операции. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная точка входа в приложение. </p>
+<p>Эта функция инициализирует объект <a class="el" href="classDecoder.html" title="Класс для управления интерфейсом программы.">Decoder</a> для парсинга аргументов командной строки, получает путь к журналу и базу данных из указанной конфигурации, инициализирует объект <a class="el" href="classNetwork.html" title="Класс для управления сетевым подключением и взаимодействием.">Network</a> с этими настройками и входит в цикл для обработки сетевых операций. Также включает обработку ошибок для сетевых исключений.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Количество аргументов командной строки. </td></tr>
+    <tr><td class="paramname">argv</td><td>Массив строк аргументов командной строки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Целое число, представляющее статус завершения программы (0 для успешного завершения). </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a43d413fb8bcb5db4a1118ce117e2d7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d413fb8bcb5db4a1118ce117e2d7d9">&#9670;&nbsp;</a></span>LOG_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string LOG_PATH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -46,22 +46,22 @@ void Decoder::parse(int argc, char *argv[])
         else if ((strcmp(argv[i], "-d") == 0 || strcmp(argv[i], "--database") == 0) && (i + 1 < argc))
         {
             this->db_path = argv[i + 1];
-            ++i;
+            ++i; // Пропустить значение параметра
         }
         else if ((strcmp(argv[i], "-l") == 0 || strcmp(argv[i], "--log") == 0) && (i + 1 < argc))
         {
             this->log_path = argv[i + 1];
-            ++i;
+            ++i; // Пропустить значение параметра
         }
         else if ((strcmp(argv[i], "-p") == 0 || strcmp(argv[i], "--port") == 0) && (i + 1 < argc))
         {
             this->port = stoi(argv[i + 1]);
-            ++i;
+            ++i; // Пропустить значение параметра
         }
         else if ((strcmp(argv[i], "-a") == 0 || strcmp(argv[i], "--address") == 0) && (i + 1 < argc))
         {
             this->address = argv[i + 1];
-            ++i;
+            ++i; // Пропустить значение параметра
         }
         else
         {

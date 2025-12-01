@@ -1,6 +1,6 @@
 # Определяем переменные для путей
 SRC_DIR = .
-MODULES_DIR = ../../Kursovaya/source/headers
+MODULES_DIR = ../../kursovaya_final/source/headers
 BUILD_DIR = .
 TARGET = unit
 

@@ -1,0 +1,8 @@
+PROJECT_NAME = "Разработка сервера"
+INPUT = /home/stud/local_git/Kursovaya
+FILE_PATTERNS = *.h *.cpp
+EXTRACT_ALL = YES
+GENERATE_HTML = YES
+GENERATE_LATEX = YES
+OUTPUT_LANGUAGE = Russian
+RECURSIVE = NO

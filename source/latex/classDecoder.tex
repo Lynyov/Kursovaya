@@ -1,0 +1,145 @@
+\hypertarget{classDecoder}{}\doxysection{Класс Decoder}
+\label{classDecoder}\index{Decoder@{Decoder}}
+
+
+Класс для управления интерфейсом программы.  
+
+
+
+
+{\ttfamily \#include $<$decoder.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDecoder_a691a867940a1c494b77e458ae1325352}{Decoder}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор принимает параметры командной строки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDecoder_a2611113905ede98075565859c3c00aeb}{parse}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Метод для парсинга аргументов командной строки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDecoder_a946f56a74919e890d438b8df8b652962}{show\+Help}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения справки. \end{DoxyCompactList}\item 
+string \& \mbox{\hyperlink{classDecoder_a249548e7b6021b48565a1080aaf0eb58}{get\+Data\+Base\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к базе данных. \end{DoxyCompactList}\item 
+string \& \mbox{\hyperlink{classDecoder_aa09fff5c85c276925d2d24b07cc178fb}{get\+Log\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к файлу логов. \end{DoxyCompactList}\item 
+string \& \mbox{\hyperlink{classDecoder_a23eb2121814fac72911ea56d02c15ba7}{get\+Addres}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения адреса сервера. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classDecoder_ad361509d94a47152cd33ad0ba6467990}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения порта сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления интерфейсом программы. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classDecoder_a691a867940a1c494b77e458ae1325352}\label{classDecoder_a691a867940a1c494b77e458ae1325352}} 
+\index{Decoder@{Decoder}!Decoder@{Decoder}}
+\index{Decoder@{Decoder}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{Decoder()}{Decoder()}}
+{\footnotesize\ttfamily Decoder\+::\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор принимает параметры командной строки. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}} & Если аргументы командной строки некорректны. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classDecoder_a23eb2121814fac72911ea56d02c15ba7}\label{classDecoder_a23eb2121814fac72911ea56d02c15ba7}} 
+\index{Decoder@{Decoder}!getAddres@{getAddres}}
+\index{getAddres@{getAddres}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{getAddres()}{getAddres()}}
+{\footnotesize\ttfamily string \& Decoder\+::get\+Addres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения адреса сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на строку с адресом сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDecoder_a249548e7b6021b48565a1080aaf0eb58}\label{classDecoder_a249548e7b6021b48565a1080aaf0eb58}} 
+\index{Decoder@{Decoder}!getDataBasePath@{getDataBasePath}}
+\index{getDataBasePath@{getDataBasePath}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{getDataBasePath()}{getDataBasePath()}}
+{\footnotesize\ttfamily string \& Decoder\+::get\+Data\+Base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к базе данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на строку с путем к базе данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDecoder_aa09fff5c85c276925d2d24b07cc178fb}\label{classDecoder_aa09fff5c85c276925d2d24b07cc178fb}} 
+\index{Decoder@{Decoder}!getLogPath@{getLogPath}}
+\index{getLogPath@{getLogPath}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{getLogPath()}{getLogPath()}}
+{\footnotesize\ttfamily string \& Decoder\+::get\+Log\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к файлу логов. 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на строку с путем к файлу логов. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDecoder_ad361509d94a47152cd33ad0ba6467990}\label{classDecoder_ad361509d94a47152cd33ad0ba6467990}} 
+\index{Decoder@{Decoder}!getPort@{getPort}}
+\index{getPort@{getPort}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int \& Decoder\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения порта сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на целое число с номером порта сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDecoder_a2611113905ede98075565859c3c00aeb}\label{classDecoder_a2611113905ede98075565859c3c00aeb}} 
+\index{Decoder@{Decoder}!parse@{parse}}
+\index{parse@{parse}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Decoder\+::parse (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Метод для парсинга аргументов командной строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Аргументы командной строки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}} & Если аргументы командной строки некорректны. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDecoder_a946f56a74919e890d438b8df8b652962}\label{classDecoder_a946f56a74919e890d438b8df8b652962}} 
+\index{Decoder@{Decoder}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!Decoder@{Decoder}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily void Decoder\+::show\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения справки. 
+
+\begin{DoxyReturn}{Возвращает}
+Справка по использованию. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Desktop/sasha/\mbox{\hyperlink{decoder_8h}{decoder.\+h}}\item 
+Desktop/sasha/\mbox{\hyperlink{decoder_8cpp}{decoder.\+cpp}}\end{DoxyCompactItemize}

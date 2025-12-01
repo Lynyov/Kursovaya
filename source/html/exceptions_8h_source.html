@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Разработка сервера: Исходный файл Desktop/sasha/exceptions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Разработка сервера
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_149f31127b318c3ca9a0aa2e8d2663de.html">sasha</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">exceptions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="exceptions_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classException.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classException.html">Exception</a> : <span class="keyword">public</span> std::exception {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classException.html">Exception</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *what() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> logException() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classException.html#a11a607edc10130e054cdce487993437d">   45</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classException.html#a11a607edc10130e054cdce487993437d">name</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">   46</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">func</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classException.html#af6bb043376cfd57addca2901019e94cb">   47</a></span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">string</span> <a class="code" href="classException.html#af6bb043376cfd57addca2901019e94cb">message</a>; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classException.html#a43197a51743087c856ce2e02efc41e2b">   48</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classException.html#a43197a51743087c856ce2e02efc41e2b">log_path</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classException.html#add37728d4a7240c005c9a77605716090">   49</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classException.html#add37728d4a7240c005c9a77605716090">critical</a>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classIOException.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIOException.html">IOException</a> : <span class="keyword">public</span> <a class="code" href="classException.html">Exception</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classIOException.html">IOException</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classArgsDecodeException.html">   70</a></span>&#160;<span class="keyword">class </span><a class="code" href="classArgsDecodeException.html">ArgsDecodeException</a> : <span class="keyword">public</span> <a class="code" href="classException.html">Exception</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classArgsDecodeException.html">ArgsDecodeException</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classDataDecodeException.html">   85</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDataDecodeException.html">DataDecodeException</a> : <span class="keyword">public</span> <a class="code" href="classException.html">Exception</a> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classDataDecodeException.html">DataDecodeException</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classAuthException.html">  100</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAuthException.html">AuthException</a> : <span class="keyword">public</span> <a class="code" href="classException.html">Exception</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classAuthException.html">AuthException</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classNetworkException.html">  115</a></span>&#160;<span class="keyword">class </span><a class="code" href="classNetworkException.html">NetworkException</a> : <span class="keyword">public</span> <a class="code" href="classException.html">Exception</a> {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classNetworkException.html">NetworkException</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;func, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;log_path, <span class="keywordtype">bool</span> critical);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="ttc" id="aclassArgsDecodeException_html"><div class="ttname"><a href="classArgsDecodeException.html">ArgsDecodeException</a></div><div class="ttdoc">Класс для исключений при декодировании аргументов.</div><div class="ttdef"><b>Definition:</b> exceptions.h:70</div></div>
+<div class="ttc" id="aclassAuthException_html"><div class="ttname"><a href="classAuthException.html">AuthException</a></div><div class="ttdoc">Класс для исключений аутентификации.</div><div class="ttdef"><b>Definition:</b> exceptions.h:100</div></div>
+<div class="ttc" id="aclassDataDecodeException_html"><div class="ttname"><a href="classDataDecodeException.html">DataDecodeException</a></div><div class="ttdoc">Класс для исключений при декодировании данных.</div><div class="ttdef"><b>Definition:</b> exceptions.h:85</div></div>
+<div class="ttc" id="aclassException_html"><div class="ttname"><a href="classException.html">Exception</a></div><div class="ttdoc">Базовый класс для исключений.</div><div class="ttdef"><b>Definition:</b> exceptions.h:20</div></div>
+<div class="ttc" id="aclassException_html_a11a607edc10130e054cdce487993437d"><div class="ttname"><a href="classException.html#a11a607edc10130e054cdce487993437d">Exception::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">Имя исключения.</div><div class="ttdef"><b>Definition:</b> exceptions.h:45</div></div>
+<div class="ttc" id="aclassException_html_a43197a51743087c856ce2e02efc41e2b"><div class="ttname"><a href="classException.html#a43197a51743087c856ce2e02efc41e2b">Exception::log_path</a></div><div class="ttdeci">string log_path</div><div class="ttdoc">Путь к файлу журнала.</div><div class="ttdef"><b>Definition:</b> exceptions.h:48</div></div>
+<div class="ttc" id="aclassException_html_a4f55da875481f85c4ad1da7eaa7e3279"><div class="ttname"><a href="classException.html#a4f55da875481f85c4ad1da7eaa7e3279">Exception::func</a></div><div class="ttdeci">string func</div><div class="ttdoc">Имя функции, в которой возникло исключение.</div><div class="ttdef"><b>Definition:</b> exceptions.h:46</div></div>
+<div class="ttc" id="aclassException_html_add37728d4a7240c005c9a77605716090"><div class="ttname"><a href="classException.html#add37728d4a7240c005c9a77605716090">Exception::critical</a></div><div class="ttdeci">bool critical</div><div class="ttdoc">Флаг критичности исключения.</div><div class="ttdef"><b>Definition:</b> exceptions.h:49</div></div>
+<div class="ttc" id="aclassException_html_af6bb043376cfd57addca2901019e94cb"><div class="ttname"><a href="classException.html#af6bb043376cfd57addca2901019e94cb">Exception::message</a></div><div class="ttdeci">string message</div><div class="ttdoc">Сообщение об ошибке.</div><div class="ttdef"><b>Definition:</b> exceptions.h:47</div></div>
+<div class="ttc" id="aclassIOException_html"><div class="ttname"><a href="classIOException.html">IOException</a></div><div class="ttdoc">Класс для исключений ввода-вывода.</div><div class="ttdef"><b>Definition:</b> exceptions.h:55</div></div>
+<div class="ttc" id="aclassNetworkException_html"><div class="ttname"><a href="classNetworkException.html">NetworkException</a></div><div class="ttdoc">Класс для сетевых исключений.</div><div class="ttdef"><b>Definition:</b> exceptions.h:115</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

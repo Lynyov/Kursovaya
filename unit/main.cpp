@@ -1,5 +1,5 @@
-#include "../../Kursovaya/source/headers/network.h"
 #include "../../Kursovaya/source/headers/decoder.h"
+#include "../../Kursovaya/source/headers/network.h"
 #include "../../Kursovaya/source/headers/exceptions.h"
 #include "../../Kursovaya/source/headers/hash.h"
 #include <UnitTest++/UnitTest++.h>
@@ -111,7 +111,7 @@ TEST(NetworkConstructorAndGetters) {
 
     CHECK_EQUAL("127.0.0.1", network.getAddress());
     CHECK_EQUAL(33333, network.getPort());
-    
+    CHECK(compareMaps(database, network.getDatabase()));
 }
 
 int main() {

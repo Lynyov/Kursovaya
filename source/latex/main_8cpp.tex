@@ -1,0 +1,105 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл Desktop/sasha/main.cpp}
+\label{main_8cpp}\index{Desktop/sasha/main.cpp@{Desktop/sasha/main.cpp}}
+{\ttfamily \#include \char`\"{}../../\+Kursovaya/source/headers/network.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Kursovaya/source/headers/decoder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+Kursovaya/source/headers/exceptions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, string $>$ \mbox{\hyperlink{main_8cpp_aeb6e353c9485bad94a71ccf3590fad0b}{get\+Data\+Base}} (string \&path)
+\begin{DoxyCompactList}\small\item\em Читает файл базы данных и заполняет карту парами \char`\"{}имя пользователя -\/ пароль\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a872a8a827dbf87d37e6cc5199dc7630b}{loop}} (\mbox{\hyperlink{classNetwork}{Network}} $\ast$network)
+\begin{DoxyCompactList}\small\item\em Основной цикл для обработки сетевых операций. Эта функция запускает сетевой сервис и входит в бесконечный цикл, в котором она ожидает входящих соединений, аутентифицирует пользователей и выполняет операции. Любые сетевые исключения обрабатываются и регистрируются. Если возникает неожиданное исключение, сетевой сервис останавливается. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Главная точка входа в приложение. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{main_8cpp_a43d413fb8bcb5db4a1118ce117e2d7d9}{LOG\+\_\+\+PATH}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_aeb6e353c9485bad94a71ccf3590fad0b}\label{main_8cpp_aeb6e353c9485bad94a71ccf3590fad0b}} 
+\index{main.cpp@{main.cpp}!getDataBase@{getDataBase}}
+\index{getDataBase@{getDataBase}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getDataBase()}{getDataBase()}}
+{\footnotesize\ttfamily map$<$string, string$>$ get\+Data\+Base (\begin{DoxyParamCaption}\item[{string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Читает файл базы данных и заполняет карту парами \char`\"{}имя пользователя -\/ пароль\char`\"{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path} & Ссылка на строку, представляющую путь к файлу базы данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Карта, содержащая пары \char`\"{}имя пользователя -\/ пароль\char`\"{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classIOException}{IOException}}} & Если файл не может быть открыт. \\
+\hline
+{\em \mbox{\hyperlink{classDataDecodeException}{Data\+Decode\+Exception}}} & Если строка в файле не соответствует ожидаемому формату или если произошла ошибка при чтении из файла. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{main_8cpp_a872a8a827dbf87d37e6cc5199dc7630b}\label{main_8cpp_a872a8a827dbf87d37e6cc5199dc7630b}} 
+\index{main.cpp@{main.cpp}!loop@{loop}}
+\index{loop@{loop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNetwork}{Network}} $\ast$}]{network }\end{DoxyParamCaption})}
+
+
+
+Основной цикл для обработки сетевых операций. Эта функция запускает сетевой сервис и входит в бесконечный цикл, в котором она ожидает входящих соединений, аутентифицирует пользователей и выполняет операции. Любые сетевые исключения обрабатываются и регистрируются. Если возникает неожиданное исключение, сетевой сервис останавливается. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em network} & Указатель на объект \mbox{\hyperlink{classNetwork}{Network}}, который обрабатывает сетевые операции. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Главная точка входа в приложение. 
+
+Эта функция инициализирует объект \mbox{\hyperlink{classDecoder}{Decoder}} для парсинга аргументов командной строки, получает путь к журналу и базу данных из указанной конфигурации, инициализирует объект \mbox{\hyperlink{classNetwork}{Network}} с этими настройками и входит в цикл для обработки сетевых операций. Также включает обработку ошибок для сетевых исключений.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Массив строк аргументов командной строки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Целое число, представляющее статус завершения программы (0 для успешного завершения). 
+\end{DoxyReturn}
+
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{main_8cpp_a43d413fb8bcb5db4a1118ce117e2d7d9}\label{main_8cpp_a43d413fb8bcb5db4a1118ce117e2d7d9}} 
+\index{main.cpp@{main.cpp}!LOG\_PATH@{LOG\_PATH}}
+\index{LOG\_PATH@{LOG\_PATH}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{LOG\_PATH}{LOG\_PATH}}
+{\footnotesize\ttfamily string LOG\+\_\+\+PATH}
+

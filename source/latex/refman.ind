@@ -1,0 +1,165 @@
+\begin{theindex}
+
+  \item {ArgsDecodeException}, \hyperpage{7}
+    \subitem {ArgsDecodeException}, \hyperpage{8}
+  \item {auth}
+    \subitem {Network}, \hyperpage{21}
+  \item {AuthException}, \hyperpage{9}
+    \subitem {AuthException}, \hyperpage{10}
+
+  \indexspace
+
+  \item {critical}
+    \subitem {Exception}, \hyperpage{17}
+
+  \indexspace
+
+  \item {DataDecodeException}, \hyperpage{10}
+    \subitem {DataDecodeException}, \hyperpage{12}
+  \item {Decoder}, \hyperpage{12}
+    \subitem {Decoder}, \hyperpage{13}
+    \subitem {getAddres}, \hyperpage{13}
+    \subitem {getDataBasePath}, \hyperpage{13}
+    \subitem {getLogPath}, \hyperpage{13}
+    \subitem {getPort}, \hyperpage{14}
+    \subitem {parse}, \hyperpage{14}
+    \subitem {showHelp}, \hyperpage{14}
+  \item {Desktop/sasha/decoder.cpp}, \hyperpage{25}
+  \item {Desktop/sasha/decoder.h}, \hyperpage{25}
+  \item {Desktop/sasha/exceptions.cpp}, \hyperpage{27}
+  \item {Desktop/sasha/exceptions.h}, \hyperpage{27}
+  \item {Desktop/sasha/hash.cpp}, \hyperpage{29}
+  \item {Desktop/sasha/hash.h}, \hyperpage{30}
+  \item {Desktop/sasha/main.cpp}, \hyperpage{32}
+  \item {Desktop/sasha/main1.cpp}, \hyperpage{34}
+  \item {Desktop/sasha/network.cpp}, \hyperpage{36}
+  \item {Desktop/sasha/network.h}, \hyperpage{36}
+
+  \indexspace
+
+  \item {Exception}, \hyperpage{15}
+    \subitem {critical}, \hyperpage{17}
+    \subitem {Exception}, \hyperpage{16}
+    \subitem {func}, \hyperpage{17}
+    \subitem {log\_path}, \hyperpage{17}
+    \subitem {logException}, \hyperpage{17}
+    \subitem {message}, \hyperpage{17}
+    \subitem {name}, \hyperpage{18}
+    \subitem {what}, \hyperpage{17}
+
+  \indexspace
+
+  \item {func}
+    \subitem {Exception}, \hyperpage{17}
+
+  \indexspace
+
+  \item {getAddres}
+    \subitem {Decoder}, \hyperpage{13}
+  \item {getAddress}
+    \subitem {Network}, \hyperpage{21}
+  \item {getDataBase}
+    \subitem {main.cpp}, \hyperpage{32}
+  \item {getDatabase}
+    \subitem {Network}, \hyperpage{21}
+  \item {getDataBasePath}
+    \subitem {Decoder}, \hyperpage{13}
+  \item {getHash}
+    \subitem {hash.cpp}, \hyperpage{29}
+    \subitem {hash.h}, \hyperpage{31}
+  \item {getLogPath}
+    \subitem {Decoder}, \hyperpage{13}
+  \item {getPort}
+    \subitem {Decoder}, \hyperpage{14}
+    \subitem {Network}, \hyperpage{21}
+  \item {getSalt}
+    \subitem {hash.cpp}, \hyperpage{29}
+    \subitem {hash.h}, \hyperpage{31}
+
+  \indexspace
+
+  \item {hash.cpp}
+    \subitem {getHash}, \hyperpage{29}
+    \subitem {getSalt}, \hyperpage{29}
+  \item {hash.h}
+    \subitem {getHash}, \hyperpage{31}
+    \subitem {getSalt}, \hyperpage{31}
+
+  \indexspace
+
+  \item {IOException}, \hyperpage{18}
+    \subitem {IOException}, \hyperpage{19}
+
+  \indexspace
+
+  \item {LOG\_PATH}
+    \subitem {main.cpp}, \hyperpage{34}
+  \item {log\_path}
+    \subitem {Exception}, \hyperpage{17}
+  \item {logException}
+    \subitem {Exception}, \hyperpage{17}
+  \item {loop}
+    \subitem {main.cpp}, \hyperpage{33}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{33}
+    \subitem {main1.cpp}, \hyperpage{34}
+  \item {main.cpp}
+    \subitem {getDataBase}, \hyperpage{32}
+    \subitem {LOG\_PATH}, \hyperpage{34}
+    \subitem {loop}, \hyperpage{33}
+    \subitem {main}, \hyperpage{33}
+  \item {main1.cpp}
+    \subitem {main}, \hyperpage{34}
+    \subitem {TEST}, \hyperpage{34--36}
+  \item {message}
+    \subitem {Exception}, \hyperpage{17}
+
+  \indexspace
+
+  \item {name}
+    \subitem {Exception}, \hyperpage{18}
+  \item {Network}, \hyperpage{20}
+    \subitem {auth}, \hyperpage{21}
+    \subitem {getAddress}, \hyperpage{21}
+    \subitem {getDatabase}, \hyperpage{21}
+    \subitem {getPort}, \hyperpage{21}
+    \subitem {Network}, \hyperpage{20}
+    \subitem {start}, \hyperpage{22}
+    \subitem {stop}, \hyperpage{22}
+    \subitem {sum}, \hyperpage{22}
+    \subitem {wait}, \hyperpage{22}
+  \item {NetworkException}, \hyperpage{23}
+    \subitem {NetworkException}, \hyperpage{24}
+
+  \indexspace
+
+  \item {parse}
+    \subitem {Decoder}, \hyperpage{14}
+
+  \indexspace
+
+  \item {showHelp}
+    \subitem {Decoder}, \hyperpage{14}
+  \item {start}
+    \subitem {Network}, \hyperpage{22}
+  \item {stop}
+    \subitem {Network}, \hyperpage{22}
+  \item {sum}
+    \subitem {Network}, \hyperpage{22}
+
+  \indexspace
+
+  \item {TEST}
+    \subitem {main1.cpp}, \hyperpage{34--36}
+
+  \indexspace
+
+  \item {wait}
+    \subitem {Network}, \hyperpage{22}
+  \item {what}
+    \subitem {Exception}, \hyperpage{17}
+
+\end{theindex}

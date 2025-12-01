@@ -1,0 +1,9 @@
+<map id="Exception" name="Exception">
+<area shape="rect" id="node1" title="Базовый класс для исключений." alt="" coords="373,80,460,107"/>
+<area shape="rect" id="node3" href="$classArgsDecodeException.html" title="Класс для исключений при декодировании аргументов." alt="" coords="5,155,169,181"/>
+<area shape="rect" id="node4" href="$classAuthException.html" title="Класс для исключений аутентификации." alt="" coords="193,155,309,181"/>
+<area shape="rect" id="node5" href="$classDataDecodeException.html" title="Класс для исключений при декодировании данных." alt="" coords="333,155,500,181"/>
+<area shape="rect" id="node6" href="$classIOException.html" title="Класс для исключений ввода&#45;вывода." alt="" coords="524,155,624,181"/>
+<area shape="rect" id="node7" href="$classNetworkException.html" title="Класс для сетевых исключений." alt="" coords="647,155,789,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="359,5,474,32"/>
+</map>
