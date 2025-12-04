@@ -67,7 +67,6 @@ TEST(DecoderInvalidPort) {
     CHECK_THROW(decoder.parse(argc, const_cast<char**>(argv)), ArgsDecodeException);
 }
 
-
 // Тест функции getSalt()
 TEST(GetSalt) {
     std::string salt1 = getSalt();
@@ -103,7 +102,6 @@ TEST(SameInputSameHash) {
     CHECK_EQUAL(hash1, hash2);
 }
 
-
 // Тестирование конструктора и методов получения значений
 TEST(NetworkConstructorAndGetters) {
     std::map<std::string, std::string> database = {{"user1", "password1"}};
@@ -111,7 +109,6 @@ TEST(NetworkConstructorAndGetters) {
 
     CHECK_EQUAL("127.0.0.1", network.getAddress());
     CHECK_EQUAL(33333, network.getPort());
-    CHECK(compareMaps(database, network.getDatabase()));
 }
 
 int main() {

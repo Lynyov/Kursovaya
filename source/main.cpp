@@ -1,6 +1,7 @@
 #include "../../Kursovaya/source/headers/network.h"
 #include "../../Kursovaya/source/headers/decoder.h"
 #include "../../Kursovaya/source/headers/exceptions.h"
+#include "../../Kursovaya/source/headers/hash.h"
 #include <iostream>
 #include <fstream>
 #include <map>
